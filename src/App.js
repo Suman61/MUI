@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import { Tweet, Timeline, Share, Follow, Hashtag} from 'react-twitter-widgets'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className = 'App'>
+      {/* <Tweet options={{align: "center"}} tweetId='1516801882190381056'/> */}
+      {/* <Share url = 'https://www.google.com' option = {{text: "Share"}} /> */}
+      {/* <Follow username='Naval' /> */}
+      {/* <Hashtag hashtag='{SpaceX}' /> */}
+
+  <Timeline
+  dataSource={{
+    sourceType: 'profile',
+    screenName: 'elon',
+  }}
+  options={{
+    theme: 'dark',
+    width: '50%',
+  }}
+/>
     </div>
   );
 }
