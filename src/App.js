@@ -3,11 +3,11 @@ import './App.css';
 
 function App() {
   return (
-    <div className = 'App'>
-      {/* <Tweet options={{align: "center"}} tweetId='1516801882190381056'/> */}
-      {/* <Share url = 'https://www.google.com' option = {{text: "Share"}} /> */}
-      {/* <Follow username='Naval' /> */}
-      {/* <Hashtag hashtag='{SpaceX}' /> */}
+    <div>
+      <Tweet options={{align: "center"}} tweetId='1516801882190381056'/>
+      <Share url = 'https://www.google.com' option = {{text: "Share"}} />
+      <Follow username='Naval' />
+      <Hashtag hashtag='{SpaceX}' />
 
   <Timeline
   dataSource={{
@@ -15,8 +15,9 @@ function App() {
     screenName: 'elon',
   }}
   options={{
+    align: 'center',
     theme: 'dark',
-    width: '50%',
+    width: '70%',
   }}
 />
     </div>
